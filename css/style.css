@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --azulFundoPrincipal: #1B2C3E;
+    --azulFundoNav: #132436;
+    --btnColor: #ED5D66;
+    --backgroundItemSelected: #344251;
+}
