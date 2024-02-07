@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d056399.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Avaliação de Fornecedor</title>
 </head>
 
 <body>
-    <nav class="sidebar">
-        <a href="/">
+    <main>
+        <nav class="sidebar">
             <div class="logo">
-                <img src="../img/websupplyLogo.png" alt="Logo da Websupply">
+                <a href="/"><img src="../img/websupplyLogo.png" alt="Logo da Websupply"></a>
             </div>
-        </a>
-        <ul>
-            <li>
-                <a href="#" class="forn-btn">Fornecedores
-                    <span class="first">click</span> 
-                    <!-- icone nao funcionando -->
-                </a>
-                <ul class="forn-show">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Analisar</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="aval-btn">Avaliar
-                    <span class="second">click</span> 
-                </a>
-                <ul class="aval-show">
-                    <li><a href="#">Realizar avaliação</a></li>
-                    <li><a href="#">Histórico de avaliações</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Usuário</a></li>
-            <li><a href="#">Indicadores</a></li>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span><i class="fas fa-chevron-down"></i></span></p>
+                    <ul class="sub-menu">
+                        <a href="/"><li>Cadastrar</li></a>
+                        <a href="/"><li>Analisar</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span><i class="fas fa-chevron-down"></i></span></p>
+                    <ul class="sub-menu">
+                        <a href="/"><li>Realizar Avaliação</li></a>
+                        <a href="/"><li>Histórico de Avaliações</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Usuário<span><i class="fas fa-chevron-down"></i></span></p>
+                </li>
+                <li class="menu-item">
+                    <p>Indicadores<span><i class="fas fa-chevron-down"></i></span></p>
+                </li>
+            </ul>
 
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+        <div class="content ">
+            <h1>principal content</h1>
+        </div>
+    </main>
 
-        </ul>
-    </nav>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>

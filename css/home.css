@@ -1,82 +1,100 @@
 @import url(style.css);
 
-.sidebar {
-    position: fixed;
-    width: 20%;
-    height: 100%;
-    left: 0;
-    background-color: var(--azulFundoNav);
+
+nav {
+    background-color: #f1f5f9;
 }
 
-.sidebar a .logo {
-    height: 129px;
-    background-color: var(--azulFundoPrincipal);
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    color: #fff;
+    background-color: var(--azulFundoNav);
+    width: 20%;
+}
+
+.sidebar .logo {
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--azulFundoPrincipal);
 }
 
-nav ul {
-    height: 100%;
+.sidebar ul {
+    list-style-type: none;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.menu-item p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
     width: 100%;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-nav ul li {
-    line-height: 60px;
-    border-bottom: 1px solid rgba(red, green, blue, 0.1);
+.menu-item p span i {
+    font-size: 12px;
+    color: #64748b;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding-left: 40px;
-    font-weight: 500;
-    display: block;
-    width: 100%;
-    border-left: 3px solid transparent;
-}
-
-nav ul li a:hover {
-    color: cyan;
-    background-color: #1e1e1e;
-    border-left-color: cyan;
-}
-
-nav ul ul {
-    position: static;
+.sub-menu {
     display: none;
+    background-color: #334155;
+    width: 100%;
+    z-index: 999;
 }
 
-nav ul .forn-show.show {
-    display: block;
+.sub-menu li {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    /* z-index: 1; */
 }
 
-nav ul .aval-show.show1 {
-    display: block;
+.sub-menu a li {
+    text-decoration: none;
+    color: #fff;
 }
 
-nav ul ul li {
-    line-height: 42px;
-    border-bottom: none;
+.sub-menu li {
+    font-size: 18px;
 }
 
-nav ul ul li a {
-    font-size: 17px;
-    color: #e6e6e6;
-    padding-left: 80px;
-}
-
-
-nav ul ul li a span {
+.buttonArea {
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 22px;
-    transition: transform 0.4s;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-nav ul ul li a:hover span {
-    transform: translateY(-50%) rotate(-180deg);
-} 
+.buttonArea button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: var(--btnColor);
+    border: none;
+    color: #fff;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.buttonArea button:hover {
+    transform: scale(1.3);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: .3s ease;
+}
