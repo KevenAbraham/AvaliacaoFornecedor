@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cadastro1.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Avaliação de Fornecedor</title>
+</head>
+<body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="/"><img src="../../img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#"><li>Cadastrar</li></a>
+                        <a href="#"><li>Analisar</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#"><li>Realizar Avaliação</li></a>
+                        <a href="#"><li>Histórico de Avaliações</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Indicadores</a></p>
+                </li>
+            </ul>
+
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+
+        <section class="container">
+            <img src="../../img/timeline-fase1.svg" alt="Timeline de processos">
+
+            <div class="boxContainer">
+                <h2 class="title">Cadastro de Fornecedor</h2>
+                <div class="lineHorizontal"></div>
+                <div class="leftBox">
+                    <input type="text" class="input" placeholder="Nome Fantasia">
+                    <input type="text" class="input" placeholder="Nome Completo">
+                    <div class="cpfphone">
+                        <input type="number" class="input" placeholder="XXXXXXXXXXXXX">
+                        <input type="number" class="input" placeholder="XXXXXXXXXXXXX">
+                    </div>
+                    <input type="number" class="input" placeholder="E-mail corporativo">
+                </div>
+                <div class="lineVertical"></div>
+                <div class="rightBox">
+                    <p class="descTitle">Caracterização da Pessoa Física</p>
+                    <div class="checkboxBox">
+                        <input type="checkbox" name="checkbox" id="checkbox"><label for="">Fabricante</label>
+                        <input type="checkbox" name="checkbox" id="checkbox"><label for="">Distribuidora</label>
+                        <input type="checkbox" name="checkbox" id="checkbox"><label for="">Prestação de Serviços</label>
+                    </div>
+                    <div class="bairronum">
+                        <input type="text" class="input" placeholder="Jardim Jardinagem">
+                        <input type="text" class="input" placeholder="2456-A">
+                    </div>
+                    <input type="text" class="input" placeholder="Avenida Tal">
+                    <div class="bairronum">
+                        <select name="" id="">
+                            <option name="" id="">teste</option>
+                            <option name="" id="">teste</option>
+                            <option name="" id="">teste</option>
+                            <option name="" id="">teste</option>
+                        </select>
+                        <input type="text" class="input" placeholder="Cidadinha">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonNext">
+                <a href="#"><button>Avançar</button></a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../../js/home.js"></script>
+</body>
+</html>
