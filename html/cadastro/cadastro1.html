@@ -49,22 +49,69 @@
                 <div class="boxContainer">
                     <h2 class="title">Cadastro de Fornecedor</h2>
                     <div class="lineHorizontal"></div>
-                    <div class="leftBox">
-                        <input type="text" class="input" placeholder="Nome Fantasia">
-                        <input type="text" class="input" placeholder="Nome Completo">
-                        <div class="cpfphone">
-                            <input type="number" class="input" placeholder="XXXXXXXXXXXXX">
-                            <input type="number" class="input" placeholder="XXXXXXXXXXXXX">
+                    <div class="inputs">
+                        <div class="leftBox">
+                            <div class="entryarea">
+                                <input type="text" required class="input">
+                                <div class="labelline">Nome Fantasia</div>
+                            </div>
+                            <div class="entryarea">
+                                <input type="text" required class="input">
+                                <div class="labelline">Nome Completo</div>
+                            </div>
+                            <div class="cpfphone">
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">CPF / CNPJ</div>
+                                </div>
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">Telefone</div>
+                                </div>
+                            </div>
+                            <div class="entryarea">
+                                <input type="text" required class="input">
+                                <div class="labelline">E-mail Corporativo</div>
+                            </div>
                         </div>
-                        <input type="number" class="input" placeholder="E-mail corporativo">
+                        <div class="lineVertical"></div>
+                        <div class="rightBox">
+                            <p class="descTitle">Caracterização da Pessoa Física</p>
+                            <div class="checkboxBox">
+                                <input type="checkbox" name="checkbox" id="checkbox"><label for="">Fabricante</label>
+                                <input type="checkbox" name="checkbox" id="checkbox"><label for="">Distribuidora</label>
+                                <input type="checkbox" name="checkbox" id="checkbox"><label for="">Prestação de Serviços</label>
+                            </div>
+                            <div class="bairronum">
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">CPF / CNPJ</div>
+                                </div>
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">Telefone</div>
+                                </div>
+                            </div>
+                            <div class="entryarea">
+                                <input type="text" required class="input">
+                                <div class="labelline">Nome da Rua</div>
+                            </div>
+                            <div class="bairronum">
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">CPF / CNPJ</div>
+                                </div>
+                                <div class="entryarea">
+                                    <input type="number" required class="inputnumber">
+                                    <div class="labelline">Telefone</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lineVertical"></div>
+                        <!-- 
                     <div class="rightBox">
                         <p class="descTitle">Caracterização da Pessoa Física</p>
                         <div class="checkboxBox">
-                            <input type="checkbox" name="checkbox" id="checkbox"><label for="">Fabricante</label>
-                            <input type="checkbox" name="checkbox" id="checkbox"><label for="">Distribuidora</label>
-                            <input type="checkbox" name="checkbox" id="checkbox"><label for="">Prestação de Serviços</label>
                         </div>
                         <div class="bairronum">
                             <input type="text" class="input" placeholder="Jardim Jardinagem">
@@ -79,7 +126,7 @@
                                 <option name="" id="">teste</option>
                             </select>
                             <input type="text" class="input" placeholder="Cidadinha">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

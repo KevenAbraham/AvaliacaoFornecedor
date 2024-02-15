@@ -32,3 +32,113 @@ main {
     background-color: var(--backgroundActiveItem);
     border-radius: 20px;
 }
+
+/* .inputs {
+    display: flex;
+} */
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    padding: 30px 0 0 25px;
+}
+
+.lineHorizontal {
+    height: 2px;
+    background: #fff;
+    position: relative;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.leftBox {
+    width: 40%;
+}
+
+.entryarea {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.entryarea input {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.1em;
+    padding: 0 15px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transition: .1s ease;
+    z-index: 111;
+}
+
+.labelline {
+    position: absolute;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 0 25px;
+    margin: 0 20px;
+    background-color: var(--backgroundActiveItem);
+    transition: .2s ease;
+}
+
+.entryarea input:focus,
+.entryarea input:valid {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.entryarea input:focus + .labelline,
+.entryarea input:valid + .labelline {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
+
+.cpfphone {
+    display: flex;
+}
+
+.lineVertical {
+    width: 2px;
+    background-color: #fff;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.descTitle {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.checkboxBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.checkboxBox label {
+    color: #fff;
+    margin: 0 10px 0 5px;
+}
+
+.bairronum {
+    display: flex;
+}
+
