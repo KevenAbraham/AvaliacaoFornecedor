@@ -26,16 +26,12 @@ main {
 }
 
 .boxContainer {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 990px;
-    height: 551px;
+    height: 500px;
     background-color: var(--backgroundActiveItem);
     border-radius: 20px;
 }
-
-/* .inputs {
-    display: flex;
-} */
 
 .title {
     font-size: 32px;
@@ -60,9 +56,10 @@ main {
 
 .entryarea {
     position: relative;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     width: 100%;
+    margin: 0 0 30px 0;
 }
 
 .entryarea input {
@@ -71,7 +68,7 @@ main {
     outline: none;
     font-size: 1.1em;
     padding: 0 15px;
-    line-height: 40px;
+    line-height: 60px;
     border-radius: 10px;
     border: 2px solid #fff;
     background-color: transparent;
@@ -109,6 +106,10 @@ main {
     display: flex;
 }
 
+.cpfphone .entryarea:first-child {
+    margin-right: 13px;
+}
+
 .lineVertical {
     width: 2px;
     background-color: #fff;
@@ -131,6 +132,7 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 27px;
 }
 
 .checkboxBox label {
@@ -142,3 +144,51 @@ main {
     display: flex;
 }
 
+.inputnumber {
+    width: 100px;
+}
+
+.buttonNext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.buttonNext button {
+    width: 154px;
+    height: 51px;
+    background-color: var(--btnColorMain);
+    font-size: 22px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.buttonNext button:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+
+.bairronum .entryarea:first-child {
+    margin-right: 13px;
+}
+
+select {
+    width: 100%;
+    outline: none;
+    font-size: 1.1em;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    transition: .1s ease;
+    color: #fff;
+    height: 65px;
+}
+
+select option {
+    color: #000;
+}

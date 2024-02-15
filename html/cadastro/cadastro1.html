@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Avaliação de Fornecedor</title>
 </head>
+
 <body>
     <main>
         <nav class="sidebar">
@@ -18,15 +20,23 @@
                 <li class="menu-item">
                     <p>Fornecedores<span>►</span></p>
                     <ul class="sub-menu">
-                        <a href="#"><li>Cadastrar</li></a>
-                        <a href="#"><li>Analisar</li></a>
+                        <a href="#">
+                            <li>Cadastrar</li>
+                        </a>
+                        <a href="#">
+                            <li>Analisar</li>
+                        </a>
                     </ul>
                 </li>
                 <li class="menu-item">
                     <p>Avaliar<span>►</span></p>
                     <ul class="sub-menu">
-                        <a href="#"><li>Realizar Avaliação</li></a>
-                        <a href="#"><li>Histórico de Avaliações</li></a>
+                        <a href="#">
+                            <li>Realizar Avaliação</li>
+                        </a>
+                        <a href="#">
+                            <li>Histórico de Avaliações</li>
+                        </a>
                     </ul>
                 </li>
                 <li class="menu-item">
@@ -80,12 +90,13 @@
                             <div class="checkboxBox">
                                 <input type="checkbox" name="checkbox" id="checkbox"><label for="">Fabricante</label>
                                 <input type="checkbox" name="checkbox" id="checkbox"><label for="">Distribuidora</label>
-                                <input type="checkbox" name="checkbox" id="checkbox"><label for="">Prestação de Serviços</label>
+                                <input type="checkbox" name="checkbox" id="checkbox"><label for="">Prestação de
+                                    Serviços</label>
                             </div>
                             <div class="bairronum">
                                 <div class="entryarea">
-                                    <input type="number" required class="inputnumber">
-                                    <div class="labelline">CPF / CNPJ</div>
+                                    <input type="text" required class="inputnumber">
+                                    <div class="labelline">Bairro</div>
                                 </div>
                                 <div class="entryarea">
                                     <input type="number" required class="inputnumber">
@@ -98,45 +109,54 @@
                             </div>
                             <div class="bairronum">
                                 <div class="entryarea">
-                                    <input type="number" required class="inputnumber">
-                                    <div class="labelline">CPF / CNPJ</div>
+                                    <select name="seila" id="seila">
+                                        <option value="teste">Estado</option>
+                                        <option value="teste">AC</option>
+                                        <option value="teste">AL</option>
+                                        <option value="teste">AP</option>
+                                        <option value="teste">AM</option>
+                                        <option value="teste">BA</option>
+                                        <option value="teste">CE</option> 
+                                        <option value="teste">DF</option> 
+                                        <option value="teste">ES</option>
+                                        <option value="teste">GO</option>
+                                        <option value="teste">MA</option>
+                                        <option value="teste">MT</option>
+                                        <option value="teste">MS</option>
+                                        <option value="teste">MG</option>
+                                        <option value="teste">PA</option>
+                                        <option value="teste">PB</option>
+                                        <option value="teste">PR</option>
+                                        <option value="teste">PI</option>
+                                        <option value="teste">PE</option>
+                                        <option value="teste">RJ</option>
+                                        <option value="teste">RN</option>
+                                        <option value="teste">RS</option>
+                                        <option value="teste">RO</option>
+                                        <option value="teste">RR</option>
+                                        <option value="teste">SC</option>
+                                        <option value="teste">SP</option>
+                                        <option value="teste">SE</option>
+                                        <option value="teste">TO</option>
+                                    </select>
                                 </div>
                                 <div class="entryarea">
-                                    <input type="number" required class="inputnumber">
-                                    <div class="labelline">Telefone</div>
+                                    <input type="text" required class="inputnumber">
+                                    <div class="labelline">Número</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                        <!-- 
-                    <div class="rightBox">
-                        <p class="descTitle">Caracterização da Pessoa Física</p>
-                        <div class="checkboxBox">
-                        </div>
-                        <div class="bairronum">
-                            <input type="text" class="input" placeholder="Jardim Jardinagem">
-                            <input type="text" class="input" placeholder="2456-A">
-                        </div>
-                        <input type="text" class="input" placeholder="Avenida Tal">
-                        <div class="bairronum">
-                            <select name="" id="">
-                                <option name="" id="">teste</option>
-                                <option name="" id="">teste</option>
-                                <option name="" id="">teste</option>
-                                <option name="" id="">teste</option>
-                            </select>
-                            <input type="text" class="input" placeholder="Cidadinha">
-                        </div> -->
                     </div>
                 </div>
             </div>
 
             <div class="buttonNext">
-                <a href="#"><button>Avançar</button></a>
+                <a href="../"><button>Avançar</button></a>
             </div>
         </section>
     </main>
-    
+
     <script src="../../js/home.js"></script>
 </body>
+
 </html>
