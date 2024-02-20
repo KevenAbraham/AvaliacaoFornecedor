@@ -1,6 +1,5 @@
 @import url(../others/style.css);
 
-
 main {
     display: flex;
 }
@@ -34,13 +33,32 @@ main {
     border-radius: 20px;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.upload-area-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .uploadlabel {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 30px;
-    width: 70%;
-    min-height: 300px;
+    width: 100%;
+    min-height: 150px;
     background: #18a7ff0d;
     display: flex;
     flex-direction: column;
@@ -58,8 +76,7 @@ main {
 .uploadlabel p {
     color: #18a7ff;
     font-size: 20px;
-    font-weight: 800;
-    font-family: cursive;
+    font-weight: 500;
 }
 
 .title {
@@ -79,10 +96,11 @@ main {
     margin-bottom: 30px;
 }
 
-.boxDesc {
-    font-size: 24px;
+.uploaded {
+    font-size: 22px;
     color: #fff;
     text-align: center;
+    margin-top: 20px
 }
 
 .buttonNext {
@@ -107,4 +125,52 @@ main {
 .buttonNext button:hover {
     transform: scale(1.05);
     transition: .2s ease;
+}
+
+.showfilebox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 15px;
+    box-shadow: #0000000d 0px 0px 0px 1px, #d1d5db3d 0px 0px 0px 1px inset;
+}
+
+.showfilebox .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filetype {
+    background: #18a7ff;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.left h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+.right span {
+    background: #18a7ff;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50%; 
 }
