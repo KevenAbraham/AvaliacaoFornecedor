@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/others/sidebar.css">
+    <link rel="stylesheet" href="../../css/register/cadastro2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Avaliação de Fornecedor</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="../home.html"><img src="../../img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#">
+                            <li>Cadastrar</li>
+                        </a>
+                        <a href="#">
+                            <li>Analisar</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#">
+                            <li>Realizar Avaliação</li>
+                        </a>
+                        <a href="#">
+                            <li>Histórico de Avaliações</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Indicadores</a></p>
+                </li>
+            </ul>
+
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+
+        <section class="container">
+            <div class="timeline"></div>
+
+            <div class="centeredItems">
+                <div class="boxContainer">
+                    <h2 class="title">Cadastro de Fornecedor</h2>
+                    <div class="lineHorizontal"></div>
+
+                    <p class="boxDesc">Faça o upload do documento aqui:</p>
+                    <form action="">
+                        <input type="file" id="upload" accept=".doc,.docx,.pdf" hidden>
+                        <label for="upload" class="uploadlabel">
+                            <span><i class="fas fa-cloud-upload-alt"></i></span>
+                            <p>Click To Upload</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="buttonNext">
+                <a href="cadastro3.html"><button>Avançar</button></a>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="../../js/sidebar.js"></script>
+</body>
+
+</html>

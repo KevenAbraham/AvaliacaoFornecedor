@@ -1,9 +1,5 @@
 @import url(style.css);
 
-nav {
-    background-color: #f1f5f9;
-}
-
 .sidebar {
     position: relative;
     top: 0;
