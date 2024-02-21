@@ -70,11 +70,11 @@ main {
 
 .uploadlabel span {
     font-size: 70px;
-    color: #18a7ff;
+    color: var(--btnColorMain);
 }
 
 .uploadlabel p {
-    color: #18a7ff;
+    color: var(--btnColorMain);
     font-size: 20px;
     font-weight: 500;
 }
@@ -145,7 +145,7 @@ main {
 }
 
 .filetype {
-    background: #18a7ff;
+    background: var(--btnColorMain);
     color: #fff;
     padding: 5px 15px;
     font-size: 20px;
@@ -162,7 +162,7 @@ main {
 }
 
 .right span {
-    background: #18a7ff;
+    background: var(--btnColorMain);
     color: #fff;
     width: 25px;
     height: 25px;
