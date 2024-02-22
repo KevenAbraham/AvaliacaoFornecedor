@@ -6,9 +6,133 @@
     <link rel="stylesheet" href="../../../css/others/sidebar.css">
     <link rel="stylesheet" href="../../../css/analysis/visualizacao-fornecedor.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Avaliação de Fornecedor</title>
 </head>
 <body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="../../home.html"><img src="../../../img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#">
+                            <li>Cadastrar</li>
+                        </a>
+                        <a href="#">
+                            <li>Analisar</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span>►</span></p>
+                    <ul class="sub-menu">
+                        <a href="#">
+                            <li>Realizar Avaliação</li>
+                        </a>
+                        <a href="#">
+                            <li>Histórico de Avaliações</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Indicadores</a></p>
+                </li>
+            </ul>
     
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+    
+        <section class="container">
+            <h2 class="title">Dados do Fornecedor</h2>
+            <div class="line"></div>
+            <div class="box">
+                <div class="left">
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Razão Social:</label>
+                        </div>
+                        <input type="text" placeholder="Fornecedor">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Contato:</label>
+                        </div>
+                        <input type="text" placeholder="Gustavo">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">E-mail:</label>
+                        </div>
+                        <input type="text" placeholder="fornecedor@gmail.com">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="input">
+                        <div class="label">
+                            <label for="">CNPJ:</label>
+                        </div>
+                        <input type="text" placeholder="12.345.678/0001.00">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Telefone:</label>
+                        </div>
+                        <input type="text" placeholder="+55 11 94987-9357">
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Endereço do Fornecedor</h2>
+            <div class="line"></div>
+            <div class="box">
+                <div class="left">
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Rua:</label>
+                        </div>
+                        <input type="text" placeholder="Rua dos Sonhos">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Cidade:</label>
+                        </div>
+                        <input type="text" placeholder="São Paulo">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="input">
+                        <div class="label">
+                            <label for="">N°:</label>
+                        </div>
+                        <input type="text" placeholder="6484-A">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">UF:</label>
+                        </div>
+                        <input type="text" placeholder="SP">
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Documentos do Fornecedor</h2>
+            <div class="line"></div>
+            <div class="documents">
+                <p class="doc">Documentação1.pdf</p>
+            </div>
+
+            <div class="buttons">
+                <a href="lista-fornecedor.html"><button><i class="fas fa-save"></i>Salvar</button></a>
+                <a href="#"><button><i class="fas fa-star"></i>Avaliar</button></a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
