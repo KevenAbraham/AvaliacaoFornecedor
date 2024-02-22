@@ -1,0 +1,47 @@
+@import url(../others/style.css);
+
+main {
+    display: flex;
+}
+
+.container {
+    background-color: var(--azulFundoPrincipal);
+    width: 80%;
+}
+
+.titleSearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemsCentered {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+td, th {
+    border: 1px solid #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.tableTitle {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--backgroundActiveItem);
+}
+
+td a {
+    color: #fff;
+}
+
