@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/fornecedor/analysis/lista-fornecedor.css">
     <link rel="stylesheet" href="/css/others/sidebar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+    <link rel="stylesheet" href="/css/others/database.css">
     <title>Avaliação de Fornecedor</title>
 </head>
+
 <body>
     <main>
         <nav class="sidebar">
@@ -54,52 +59,85 @@
             <h2 class="title">Lista de Fornecedores</h2>
 
             <div class="itemsCentered">
-                <table>
-                    <tr class="tableTitle">
-                        <td>CPF/CPNJ</td>
-                        <td>Fornecedor</td>
-                        <td>Visualização Completa</td>
-                    </tr>
-                    <tr>
-                        <td>42.364.861/0001-07</td>
-                        <td>Fornecedor 1</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>128.484.290-89</td>
-                        <td>Fornecedor 2</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>019.456.770-23</td>
-                        <td>Fornecedor 3</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>89.650.620/0001-80</td>
-                        <td>Fornecedor 4</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>55.766.525/0001-24</td>
-                        <td>Fornecedor 5</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>198.514.690-84</td>
-                        <td>Fornecedor 6</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
-                    <tr>
-                        <td>47.462.028/0001-04</td>
-                        <td>Fornecedor 7</td>
-                        <td><a href="visualizacao-fornecedor.html">Ver</a></td>
-                    </tr>
+                <table id="tableUni">
+                    <thead>
+                        <tr>
+                            <td>CPF/CPNJ</td>
+                            <td>Fornecedor</td>
+                            <td>Visualização Completa</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 1</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 2</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 3</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 4</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 5</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 6</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 7</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>42.364.861/0001-07</td>
+                            <td>Fornecedor 8</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
     </main>
 
     <script src="/js/sidebar.js"></script>
+    <script>
+        var table = new DataTable('#tableUni', {
+            language: { url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" },
+            searching: false,
+            lengthMenu: [6],
+            paging: true, // Ativa a paginação
+            searching: true, // Ativa a pesquisa
+            ordering: false,
+            language: {
+                lengthMenu: 'Apresentar _MENU_ linhas por página',
+                zeroRecords: 'Não há Registros',
+                info: 'Página _PAGE_ de _PAGES_',
+                infoEmpty: 'Não há Registros',
+                infoFiltered: '(Filtrando de _MAX_ registros)',
+                searchPlaceholder: "Filtre por nome ou email",
+                search: 'Pesquisar:',
+                paginate: {
+                    next: '<i class="fa-solid fa-angle-right color-red"></i>',
+                    previous: '<i class="fa-solid fa-angle-left color-red"></i>',
+                },
+            },
+        });
+    </script>
 </body>
+
 </html>

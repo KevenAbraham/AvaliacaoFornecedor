@@ -23,7 +23,7 @@ main {
     margin-top: 100px
 }
 
-table {
+/* table {
     width: 70%;
     border-collapse: collapse;
     color: #fff;
@@ -42,7 +42,7 @@ td, th {
 
 tr:nth-child(even) {
     background-color: var(--backgroundActiveItem);
-}
+} */
 
 td a {
     text-decoration: none;
@@ -57,3 +57,4 @@ td a:hover {
     border: 2px solid;
     transition: .2s ease;
 }
+
