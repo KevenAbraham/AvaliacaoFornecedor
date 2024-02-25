@@ -70,42 +70,92 @@
                     <tbody>
                         <tr>
                             <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 1</td>
+                            <td>John Marston</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 2</td>
+                            <td>192.387.540-04</td>
+                            <td>Arthur Morgan</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 3</td>
+                            <td>98.631.764/0001-80</td>
+                            <td>Jack Marston</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 4</td>
+                            <td>904.377.660-20</td>
+                            <td>Dutch Van Der Line</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 5</td>
+                            <td>90.746.465/0001-89</td>
+                            <td>Hosea Matthews</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 6</td>
+                            <td>301.295.620-41</td>
+                            <td>Lenny Summers</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 7</td>
+                            <td>844.254.650-24</td>
+                            <td>Abgail Marston</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                         <tr>
-                            <td>42.364.861/0001-07</td>
-                            <td>Fornecedor 8</td>
+                            <td>64.431.275/0001-62</td>
+                            <td>John O'Creagh</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>157.463.750-98</td>
+                            <td>Dutch Van Der Line</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>82.777.091/0001-30</td>
+                            <td>Hosea Matthews</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>974.410.780-40</td>
+                            <td>Lenny Summers</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>643.029.120-06</td>
+                            <td>Abgail Marston</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>85.835.744/0001-89</td>
+                            <td>John O'Creagh</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>06.735.236/0001-52</td>
+                            <td>Dutch Van Der Line</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>382.659.220-43</td>
+                            <td>Hosea Matthews</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>279.846.080-83</td>
+                            <td>Lenny Summers</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>48.819.442/0001-90</td>
+                            <td>Abgail Marston</td>
+                            <td><a href="visualizacao-fornecedor.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>627.416.000-07</td>
+                            <td>John O'Creagh</td>
                             <td><a href="visualizacao-fornecedor.html">Ver</a></td>
                         </tr>
                     </tbody>
@@ -118,10 +168,9 @@
     <script>
         var table = new DataTable('#tableUni', {
             language: { url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" },
-            searching: false,
-            lengthMenu: [6],
-            paging: true, // Ativa a paginação
-            searching: true, // Ativa a pesquisa
+            lengthMenu: [6], // Define o valor padrão de 6 sem a opção de seleção
+            paging: true,
+            searching: true,
             ordering: false,
             language: {
                 lengthMenu: 'Apresentar _MENU_ linhas por página',
