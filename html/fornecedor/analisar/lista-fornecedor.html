@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="/css/others/database.css">
     <title>Avaliação de Fornecedor</title>
 </head>
 
@@ -60,7 +59,7 @@
             <h2 class="title">Lista de Fornecedores</h2>
 
             <div class="itemsCentered">
-                <table id="tableUni">
+                <table id="lista-fornecedor">
                     <thead>
                         <tr>
                             <td>CPF/CPNJ</td>
@@ -167,7 +166,7 @@
 
     <script src="/js/sidebar.js"></script>
     <script>
-        var table = new DataTable('#tableUni', {
+        var table = new DataTable('#lista-fornecedor', {
             language: { url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" },
             lengthMenu: [6], // Define o valor padrão de 6 sem a opção de seleção
             paging: true,
