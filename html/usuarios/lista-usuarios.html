@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/usuarios/lista-usuarios.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/others/sidebar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Avaliação de Fornecedor</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/usuarios/lista-usuarios.css">
+        <link rel="stylesheet" href="/css/others/sidebar.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <title>Avaliação de Fornecedor</title>
+    </head>
 </head>
 <body>
     <main>
@@ -52,7 +56,7 @@
                 <div class="line"></div>
         
                 <div class="itemsCentered">
-                    <table>
+                    <table id="lista-usuarios">
                         <tr class="tableTitle">
                             <td>Nome</td>
                             <td>E-mail</td>
@@ -109,5 +113,27 @@
     </section>
 
     <script src="../../js/sidebar.js"></script>
+    <script>
+        var table = new DataTable('#lista-usuario', {
+            language: { url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" },
+            lengthMenu: [6], // Define o valor padrão de 6 sem a opção de seleção
+            paging: true,
+            searching: true,
+            ordering: false,
+            language: {
+                lengthMenu: 'Apresentar _MENU_ linhas por página',
+                zeroRecords: 'Não há Registros',
+                info: 'Página _PAGE_ de _PAGES_',
+                infoEmpty: 'Não há Registros',
+                infoFiltered: '(Filtrando de _MAX_ registros)',
+                searchPlaceholder: "Busque o forncedor",
+                search: 'Pesquisar:',
+                paginate: {
+                    next: '<i class="fas fa-angle-right"></i>',
+                    previous: '<i class="fas fa-angle-left"></i>',
+                },
+            },
+        });
+    </script>
 </body>
 </html>
