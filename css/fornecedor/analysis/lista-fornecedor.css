@@ -36,7 +36,7 @@ tbody tr td {
 }
 
 tbody tr:nth-child(even) td {
-    background-color: transparent; /* Cor de fundo para linhas pares */
+    background-color: transparent;
 }
 
 td a {
@@ -52,4 +52,3 @@ td a:hover {
     border: 2px solid;
     transition: .2s ease;
 }
-
