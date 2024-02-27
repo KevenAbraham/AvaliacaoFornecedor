@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/usuarios/lista-usuarios.css">
-        <link rel="stylesheet" href="/css/others/sidebar.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <title>Avaliação de Fornecedor</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fornecedor/analysis/lista-fornecedor.css">
+    <link rel="stylesheet" href="/css/others/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Avaliação de Fornecedor</title>
 </head>
+
 <body>
     <main>
         <nav class="sidebar">
@@ -21,100 +21,183 @@
             </div>
             <ul>
                 <li class="menu-item">
-                    <p>Fornecedores<span>►</span></p>
+                    <p>Fornecedores<span class=".menu_vector">►</span></p>
                     <ul class="sub-menu">
-                        <a href="/html/fornecedor/cadastro/cadastro1.html"><li>Cadastrar</li></a>
-                        <a href="/html/fornecedor/analisar/lista-fornecedor.html"><li>Analisar</li></a>
+                        <a href="/html/fornecedor/cadastro/cadastro1.html">
+                            <li>Cadastrar</li>
+                        </a>
+                        <a href="/html/fornecedor/analisar/lista-fornecedor.html">
+                            <li>Analisar</li>
+                        </a>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <p>Avaliar<span>►</span></p>
+                    <p>Avaliar<span class="menu_vector">►</span></p>
                     <ul class="sub-menu">
-                        <a href="#"><li>Realizar Avaliação</li></a>
-                        <a href="#"><li>Histórico de Avaliações</li></a>
+                        <a href="#">
+                            <li>Realizar Avaliação</li>
+                        </a>
+                        <a href="#">
+                            <li>Histórico de Avaliações</li>
+                        </a>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <p><a href="#">Usuários</a></p>
+                    <p><a href="/html/usuarios/lista-usuarios.html">Usuários</a></p>
                 </li>
                 <li class="menu-item">
                     <p><a href="#">Indicadores</a></p>
                 </li>
             </ul>
-    
+
             <div class="buttonArea">
                 <a href="/"><button>Finalizar</button></a>
             </div>
         </nav>
-    
+
         <section class="container">
-            <div class="boxContainer">
-                <div class="titleSearch">
-                    <h2 class="title">Usuários</h2>
-                    <input type="text" placeholder="Buscar usuário">
-                </div>
-                <div class="line"></div>
-        
-                <div class="itemsCentered">
-                    <table id="lista-usuarios">
-                        <tr class="tableTitle">
+            <h2 class="title">Lista de Usuários</h2>
+
+            <div class="itemsCentered">
+                <table id="lista-fornecedor">
+                    <thead>
+                        <tr>
                             <td>Nome</td>
                             <td>E-mail</td>
-                            <td>Satus</td>
+                            <td>Status</td>
                             <td>Editar</td>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
-                            <td>Keven Abraham Souza</td>
+                            <td>Keven Abraham de Souza</td>
                             <td>ksouza@websupply.com.br</td>
                             <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Hitalo Jacome</td>
-                            <td>hjacome@websupply.com.br</td>
-                            <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td>Juliana Silva</td>
+                            <td>juliana.silva@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Mirella Germano</td>
-                            <td>mgermano@websupply.com.br</td>
+                            <td>Marcos Oliveira</td>
+                            <td>moliveira@example.com</td>
                             <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Leticia Astorga</td>
-                            <td>lastorga@websupply.com.br</td>
-                            <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td>Ana Santos</td>
+                            <td>ana.santos@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Priscila Herculano</td>
-                            <td>pherculano@websupply.com.br</td>
+                            <td>Fernanda Lima</td>
+                            <td>fernanda.lima@example.com</td>
                             <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Murilo Santana</td>
-                            <td>msantana@websupply.com.br</td>
-                            <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td>Rafael Pereira</td>
+                            <td>rafael.pereira@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
                         <tr>
-                            <td>Giovanna Lacerda</td>
-                            <td>glacerda@websupply.com.br</td>
+                            <td>Leticia Oliveira</td>
+                            <td>leticia.oliveira@example.com</td>
                             <td>Ativo</td>
-                            <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
                         </tr>
-                       
-                    </table>
-                </div>
+                        <tr>
+                            <td>Gabriel Mendes</td>
+                            <td>gabriel.mendes@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Carla Costa</td>
+                            <td>carla.costa@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Almeida</td>
+                            <td>pedro.almeida@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Camila Santos</td>
+                            <td>camila.santos@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Ferreira</td>
+                            <td>lucas.ferreira@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Sandra Lima</td>
+                            <td>sandra.lima@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Roberto Santos</td>
+                            <td>roberto.santos@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Amanda Oliveira</td>
+                            <td>amanda.oliveira@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Almeida</td>
+                            <td>felipe.almeida@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Vanessa Pereira</td>
+                            <td>vanessa.pereira@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Marcia Silva</td>
+                            <td>marcia.silva@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Luis Souza</td>
+                            <td>luis.souza@example.com</td>
+                            <td>Ativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Gisele Oliveira</td>
+                            <td>gisele.oliveira@example.com</td>
+                            <td>Inativo</td>
+                            <td><a href="editrar-usuario.html"><i class="fas fa-pen"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </section>
     </main>
-    </section>
 
-    <script src="../../js/sidebar.js"></script>
+    <script src="/js/sidebar.js"></script>
     <script>
-        var table = new DataTable('#lista-usuario', {
+        var table = new DataTable('#lista-fornecedor', {
             language: { url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/Portuguese-Brasil.json" },
             lengthMenu: [6], // Define o valor padrão de 6 sem a opção de seleção
             paging: true,
@@ -126,7 +209,7 @@
                 info: 'Página _PAGE_ de _PAGES_',
                 infoEmpty: 'Não há Registros',
                 infoFiltered: '(Filtrando de _MAX_ registros)',
-                searchPlaceholder: "Busque o forncedor",
+                searchPlaceholder: "Busque o usuário",
                 search: 'Pesquisar:',
                 paginate: {
                     next: '<i class="fas fa-angle-right"></i>',
@@ -136,4 +219,5 @@
         });
     </script>
 </body>
+
 </html>
