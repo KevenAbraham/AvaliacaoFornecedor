@@ -1,0 +1,77 @@
+@import url(/css/others/style.css);
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    background: var(--azulFundoPrincipal);
+    padding: 0 100px 0 50px;
+}
+
+.title {
+    font-size: 32px;
+    width: 90%;
+    color: #fff;
+    margin: 100px auto 0 auto;
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: #fff;
+    margin: 5px auto 0 auto;
+}
+
+.centeredItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 990px;
+    height: 500px;
+    background-color: var(--backgroundActiveItem);
+    border-radius: 20px;
+}
+
+.boxContainer img {
+    margin-bottom: 42px;
+}
+
+.desc {
+    font-size: 32px;
+    color: #fff;
+}
+
+.buttonNext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.buttonNext button {
+    width: 154px;
+    height: 51px;
+    background-color: var(--btnColorMain);
+    font-size: 22px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.buttonNext button:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
+}

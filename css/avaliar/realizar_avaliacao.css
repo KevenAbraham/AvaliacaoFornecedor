@@ -133,7 +133,7 @@ textarea {
     justify-content: center;
 }
 
-button {
+.buttons button {
     margin: 40px 5px 0 5px;
     width: 198px;
     height: 45px;
