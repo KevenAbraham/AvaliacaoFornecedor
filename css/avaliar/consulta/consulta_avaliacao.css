@@ -1,9 +1,18 @@
-@import url(/css/others/style.css);
+.sidebar {
+    position: fixed !important;
+}
+
+.container {
+    position: relative;
+    left: 20%;
+}
 
 .title {
     color: #fff;
     margin: 50px auto 10px auto;
     width: 90%;
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .grid {

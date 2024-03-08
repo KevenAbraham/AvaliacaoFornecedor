@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/avaliar/consulta/historico_avaliacao.css">
     <link rel="stylesheet" href="/css/others/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Avaliação de Fornecedor</title>
 </head>
-
 <body>
     <main>
         <nav class="sidebar">
@@ -45,51 +46,38 @@
         </nav>
 
         <section class="container">
-            <div class="userWelcome">
-                <h2>Olá, Fulano! Bem-vindo(a)!</h2>
-            </div>
-        
-            <div class="grid-container">
-                <div class="box gc1">
-                    <p class="desc">Total de Fornecedores</p>
-                    <h3 class="number">1.572</h3>
+            <h2 class="title">Histórico de Avaliação do Fornecedor</h2>
+            <div class="line"></div>
+
+            <div class="content">
+                <h2 class="fornTitle">Fornecedor</h2>
+                <p class="fornName">Fornecedor X</p>
+
+                <div class="itemsCentered">
+                    <table id="lista-fornecedor">
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Avaliação</td>
+                                <td>Nota</td>
+                                <td>Data</td>
+                                <td>Visualização Completa</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Keven Abraham de Souza</td>
+                                <td>ksouza@websupply.com.br</td>
+                                <td>Ativo</td>
+                                <td><a href="/html/avaliar/consulta/visualizacao_avaliacao.html"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="box gc1">
-                    <p class="desc">Cadastrados no mês</p>
-                    <h3 class="number">352</h3>
-                </div>
-                <div class="box gc1">
-                    <p class="desc">Fornecedores 5 <span>☆</span></p>
-                    <h3 class="number">628</h3>
-                </div>
-            </div>
-        
-            <div class="grid-container2">
-                <div class="box gc2">
-                    <p class="desc">Fornecedores 4 <span>☆</span></p>
-                    <h3 class="number">408</h3>
-                </div>
-                <div class="box gc2">
-                    <p class="desc">Fornecedores 3 <span>☆</span></p>
-                    <h3 class="number">305</h3>
-                </div>
-                <div class="box gc2">
-                    <p class="desc">Fornecedores 2 <span>☆</span></p>
-                    <h3 class="number">182</h3>
-                </div>
-                <div class="box gc2">
-                    <p class="desc">Fornecedores 1 <span>☆</span></p>
-                    <h3 class="number">49</h3>
-                </div>
-            </div>
-        
-            <div class="buttonSeeMore">
-                <a href="fornecedor/analisar/lista-fornecedor.html"><button>Ver mais</button></a>
             </div>
         </section>
     </main>
 
-    <script src="../js/sidebar.js"></script>
+    <script src="/js/sidebar.js"></script>
 </body>
-
 </html>
