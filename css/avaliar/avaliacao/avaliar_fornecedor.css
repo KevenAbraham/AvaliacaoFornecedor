@@ -1,0 +1,74 @@
+@import url(/css/others/style.css);
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    background: var(--azulFundoPrincipal);
+    padding: 0 100px 0 50px;
+}
+
+.title {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    width: 90%;
+    margin: 100px auto 5px auto;
+
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.fornecedorInfo {
+    background-color:var(--backgroundActiveItem);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 149px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px;
+}
+
+.nomeTitle {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.fornNome {
+    font-size: 22px;
+    color: #fff;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--borderColor);
+    background-color: transparent;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s ease;
+}
+
+button:hover {
+    background-color: var(--borderColor);
+    transition: .3s ease;
+}

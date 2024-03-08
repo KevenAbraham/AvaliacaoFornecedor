@@ -1,0 +1,125 @@
+@import url(/css/others/style.css);
+
+.title {
+    color: #fff;
+    margin: 50px auto 10px auto;
+    width: 90%;
+}
+
+.grid {
+    width: 90%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 22px;
+}
+
+.box {
+    background-color: var(--backgroundActiveItem);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform .2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover {
+    transform: scale(1.01);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.gc1 {
+    height: 144px;
+}
+
+.gc2 {
+    height: 82px;
+}
+
+.gc1 .desc {
+    font-size: 24px;
+    color: #fff;
+    margin: 13px 60px 20px 22px;
+}
+
+.gc1 .number {
+    font-size: 45px;
+    color: #fff;
+    margin-left: 22px;
+    font-weight: 400;
+}
+
+.gc2 .desc {
+    font-size: 18px;
+    margin: 6px 54px 7px 21px;
+    color: #fff;
+}
+
+.gc2 .number {
+    font-size: 32px;
+    margin-left: 21px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    margin: 20px auto; 
+    width: 90%;
+}
+
+.fornecedorInfo {
+    background-color:var(--backgroundActiveItem);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 149px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px;
+    width: 90%;
+}
+
+.nomeTitle {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.fornNome {
+    font-size: 22px;
+    color: #fff;
+}
+
+.media i {
+    color: var(--btnColorMain);
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--borderColor);
+    background-color: transparent;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s ease;
+}
+
+button:hover {
+    background-color: var(--borderColor);
+    transition: .3s ease;
+}

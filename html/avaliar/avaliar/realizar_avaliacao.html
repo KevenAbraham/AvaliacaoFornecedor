@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/avaliar/avaliacao/realizar_avaliacao.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/others/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Avaliação de Fornecedor</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="/html/home.html"><img src="/img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/fornecedor/cadastro/cadastro1.html"><li>Cadastrar</li></a>
+                        <a href="/html/fornecedor/analisar/lista-fornecedor.html"><li>Analisar</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><li>Realizar Avaliação</li></a>
+                        <a href="#"><li>Histórico de Avaliações</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="usuarios/lista-usuarios.html">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="#">Indicadores</a></p>
+                </li>
+            </ul>
+
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h2 class="title">Avaliar Fornecedor</h2>
+            <div class="line"></div>
+
+            <div class="content">
+                <h2 class="titleText">Avalie o Fornecedor</h2>
+
+                <h2 class="fornName">Fornecedor Nome</h2>
+                <div class="fornInfo">
+                    <p class="fornEmail">fornecedor@email.com</p>
+                    <p class="fornContact">Contato: Gustavo</p>
+                </div>
+
+                <p class="avaliadorNome">Avaliador</p>
+                <input type="text" placeholder="Fabio Sérgio Cassadore" class="fornNameInput">
+
+                <p class="choice">O que gostaria de avaliar? *</p>
+                <select name="" id="#">
+                    <option value="QP">Selecione</option>
+                    <option value="QP">Qualidade de Produto</option>
+                    <option value="QS">Qualidade de Serviço</option>
+                    <option value="TP">Tempo de Entrega</option>
+                </select>
+
+                <p class="star">Avalie-o de 1 a 5 estrelas *</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="detalhe">Detalhe mais a sua avaliação</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Nós queremos saber mais de você"></textarea>
+
+                <div class="buttons">
+                    <a href="#"><button class="limparBtn">Limpar</button></a>
+                    <a href="/html/avaliar/avaliar/concluir_avaliacao.html"><button class="avaliarBtn">Avaliar</button></a>
+                    <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><button class="voltarBtn">Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/stars.js"></script>
+</body>
+
+</html>

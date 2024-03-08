@@ -1,0 +1,168 @@
+@import url(/css/others/style.css);
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    background: var(--azulFundoPrincipal);
+    padding: 0 100px 0 50px;
+}
+
+.title {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    width: 90%;
+    margin: 100px auto 5px auto;
+
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+}
+
+.content {
+    background-color: var(--backgroundActiveItem);
+    width: 80%;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    padding: 30px 60px;
+}
+
+.titleText {
+    font-size: 24px;
+    color: #fff;
+}
+
+.fornName {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.fornInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fornEmail, .fornContact {
+    color: #fff;
+    font-size: 22px;
+}
+
+.avaliadorNome {
+    margin: 20px 0 5px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.fornNameInput {
+    width: 390px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.choice {
+    margin: 20px 0 5px 0;
+    color: #fff;
+    font-size: 22px;
+}
+
+select {
+    width: 321px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #d9d9d9;
+}
+
+.star {
+    margin: 30px 0 5px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars i {
+    color: #e6e6e6;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active {
+    color: var(--btnColorMain);
+}
+
+.detalhe {
+    margin: 20px 0 5px 0;
+    color: #fff;
+    font-size: 22px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 129px;
+    padding: 20px;
+    font-size: 22px;
+    color: #000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 40px 5px 0 5px;
+    width: 198px;
+    height: 45px;
+    font: 800;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.limparBtn {
+    background-color: #ED5D66;
+}
+
+.avaliarBtn {
+    background-color: #19BE6F;
+}
+
+.voltarBtn {
+    background-color: #597797;
+}
+
+button:hover {
+    transform: scale(1.04);
+    transition: .2s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
