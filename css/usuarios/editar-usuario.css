@@ -82,8 +82,8 @@ main {
     cursor: pointer;
     border-radius: 2rem;
     transition: all 300ms ease-in-out;
-    width: 140px;
-    height: 60px;
+    width: 100px;
+    height: 2.4rem;
     position: relative;
     box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
         0 0 1rem rgba(0, 0, 0, 0.1);
@@ -93,10 +93,10 @@ main {
 .switch>.slider>.button {
     content: "";
     position: absolute;
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     background: #2376CF;
-    top: 4px;
+    top: 0.6px;
     left: 4px;
     transition: all 300ms ease-in-out;
     border-radius: 50%;
@@ -108,10 +108,10 @@ main {
 .switch>.slider:after {
     position: absolute;
     top: 50%;
-    right: 4px;
+    right: 5px;
     transform: translate(0, -50%);
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1rem;
     color: #444;
     font-weight: bold;
     z-index: 1;
@@ -128,7 +128,7 @@ main {
 
 /* Botão ON */
 .switch>.hidden-toggle:checked~.slider>.button {
-    left: 97%;
+    left: 95%;
     transform: translateX(-100%);
     box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
     background: #e0e2db;
@@ -136,7 +136,7 @@ main {
 
 /* Texto ON */
 .switch>.hidden-toggle:checked~.slider:after {
-    right: 4.4rem;
+    right: 3.3rem;
     color: #f1f1ff;
     content: "Ativo";
 }
