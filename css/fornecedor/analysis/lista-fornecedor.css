@@ -149,29 +149,29 @@ div.dt-container .dt-paging {
 
 @media screen and (max-width: 767px) {
     div.dt-container div.dt-layout-row {
-      display: block;
+        display: block;
     }
-  
+
     div.dt-container div.dt-layout-cell {
-      display: block;
+        display: block;
     }
-  
+
     div.dt-container div.dt-layout-cell.dt-full,
     div.dt-container div.dt-layout-cell.dt-start,
     div.dt-container div.dt-layout-cell.dt-end {
-      text-align: center;
+        text-align: center;
     }
-  }
-  
-  @media screen and (max-width: 640px) {
-  
+}
+
+@media screen and (max-width: 640px) {
+
     .dt-container .dt-length,
     .dt-container .dt-search {
-      float: none;
-      text-align: center;
+        float: none;
+        text-align: center;
     }
-  
+
     .dt-container .dt-search {
-      margin-top: 0.5em;
+        margin-top: 0.5em;
     }
-  }
+}

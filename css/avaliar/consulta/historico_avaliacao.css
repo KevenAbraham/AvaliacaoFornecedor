@@ -1,0 +1,200 @@
+@import url(/css/others/style.css);
+
+.title {
+    color: #fff;
+    font-size: 32px;
+    width: 90%;
+    margin: 100px auto 0 auto;
+}
+
+.line {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    height: 1px;
+}
+
+.content {
+    margin: 50px auto 0 auto;
+    width: 90%;
+}
+
+.content .fornTitle {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content .fornName {
+    color: #fff;
+    font-size: 24px;
+}
+
+table.dataTable {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 22px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    text-align: center;
+    font-size: 22px;
+}
+
+table.dataTable th,
+table.dataTable td {
+    width: 20%;
+    border: 1px solid #fff;
+    padding: 30px 5px;
+    color: #fff;
+    text-align: center;
+}
+
+table.dataTable tbody tr {
+    background-color: var(--backgroundActiveItem);
+}
+
+table.dataTable tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+td a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .1s ease;
+}
+
+div.dt-container {
+    width: 100%;
+}
+
+div.dt-container div.dt-layout-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    clear: both;
+    width: 100%;
+}
+
+div.dt-container div.dt-layout-row.dt-layout-table {
+    width: 100%;
+}
+
+div.dt-container div.dt-layout-row.dt-layout-table div.dt-layout-cell {
+    display: block;
+    width: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    background-color: var(--azulFundoPrincipal);
+    width: 80%;
+}
+
+.itemsCentered {
+    width: 100%;
+    margin: auto;
+}
+
+div.dt-container .dt-length {
+    display: none;
+}
+
+div.dt-container .dt-search input {
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 3px;
+    margin-top: 30px;
+}
+
+/* botões de passar a pagina */
+div.dt-container .dt-paging .dt-paging-button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: transparent;
+}
+
+div.dt-container .dt-paging .dt-paging-button.current,
+div.dt-container .dt-paging .dt-paging-button.current:hover {
+    color: #fff !important;
+    border: 1px solid var(--btnColor);
+}
+
+div.dt-container .dt-paging .dt-paging-button.disabled,
+div.dt-container .dt-paging .dt-paging-button.disabled:hover,
+div.dt-container .dt-paging .dt-paging-button.disabled:active {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+div.dt-container .dt-paging .dt-paging-button:hover {
+    color: white !important;
+    border: 1px solid #111;
+    background-color: var(--btnColor);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--btnColor)), color-stop(100%, #6d2a2f));
+}
+
+div.dt-container .dt-paging .dt-paging-button:active {
+    outline: none;
+    background-color: var(--borderColor);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5A85B0), color-stop(100%, #2b4258));
+}
+
+div.dt-container .dt-length,
+div.dt-container .dt-search,
+div.dt-container .dt-info,
+div.dt-container .dt-processing,
+div.dt-container .dt-paging {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    div.dt-container div.dt-layout-row {
+        display: block;
+    }
+
+    div.dt-container div.dt-layout-cell {
+        display: block;
+    }
+
+    div.dt-container div.dt-layout-cell.dt-full,
+    div.dt-container div.dt-layout-cell.dt-start,
+    div.dt-container div.dt-layout-cell.dt-end {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .dt-container .dt-length,
+    .dt-container .dt-search {
+        float: none;
+        text-align: center;
+    }
+
+    .dt-container .dt-search {
+        margin-top: 0.5em;
+    }
+}
