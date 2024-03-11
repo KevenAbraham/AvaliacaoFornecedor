@@ -1,0 +1,104 @@
+@import url(/css/others/style.css);
+
+.title {
+    color: #fff;
+    font-size: 32px;
+    width: 90%;
+    margin: 100px auto 0 auto;
+    text-transform: capitalize;
+}
+
+.line {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    height: 1px;
+}
+
+.content {
+    margin: 50px auto 0 auto;
+    width: 90%;
+    background-color: var(--backgroundActiveItem);
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+.avaliacaoNome {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nome-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avaliadorNome {
+    color: #fff;
+    font-size: 22px;
+}
+
+.data {
+    font-size: 22px;
+    color: #fff;
+}
+
+.avaliacaoNota, .avaliadoEm, .detalhe {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nota {
+    color: #fff;
+    font-size: 22px;
+}
+
+.nota span {
+    font-size: 20px;
+    color: var(--btnColorMain);
+    margin-right: 10px;
+}
+
+.avaliado {
+    padding: 20px;
+    background-color: #ddd;
+    width: 30%;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.detalheBox {
+    padding: 20px;
+    background-color: #ddd;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn button {
+    background-color: var(--borderColor);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+.btn button:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease;
+}
