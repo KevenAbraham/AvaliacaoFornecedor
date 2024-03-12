@@ -1,0 +1,53 @@
+@import url(/css/others/style.css);
+
+.title {
+    font-size: 32px;
+    color: #fff;
+    margin: 100px auto 0 auto;
+    width: 90%;
+}
+
+.line {
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto 10px auto;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrega, .servico, .produto {
+    background-color: #28425C;
+    height: 354px;
+    width: 486px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleBox {
+    font-size: 32px;
+    color: #fff;
+    margin: 25px auto 0 auto;
+    width: 90%;
+}
+
+#chart, #chart2, #chart3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.apexcharts-legend-text {
+    font-size: 20px !important;
+}

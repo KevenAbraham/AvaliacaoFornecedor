@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indicadores/indicadores.css">
+    <link rel="stylesheet" href="/css/others/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Avaliação de Fornecedor</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="/html/home.html"><img src="/img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/fornecedor/cadastro/cadastro1.html"><li>Cadastrar</li></a>
+                        <a href="/html/fornecedor/analisar/lista-fornecedor.html"><li>Analisar</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><li>Realizar Avaliação</li></a>
+                        <a href="/html/avaliar/consulta/consulta_avaliacao.html"><li>Histórico de Avaliações</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="usuarios/lista-usuarios.html">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="/html/indicadores/indicadores.html">Indicadores</a></p>
+                </li>
+            </ul>
+
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+
+        <section class="container">
+            <h2 class="title">Indicadores</h2>
+            <div class="line"></div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="entrega">
+                        <h2 class="titleBox">Tempo de Entrega</h2>
+                        <div id="chart"></div>
+                    </div>
+
+                    <div class="servico">
+                        <h2 class="titleBox">Qualidade de Serviço</h2>
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h2 class="titleBox">Qualidade de Produto</h2>
+                    <div id="chart3"></div>
+                </div>
+            </div>
+
+            <div class="btn">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/sidebar.js"></script>
+    <script>
+        var options = {
+            series: [132, 189, 256, 351, 421],
+            chart: {
+                width: 380,
+                type: 'pie',
+                foreColor: '#ffffff',
+            },
+            labels: ['1 Estrela', '2 Estrelas', '3 Estrelas', '4 Estrelas', '5 Estrelas'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }],
+            dataLabels: {
+                style: {
+                    fontSize: '16px' // Define o tamanho da fonte dos rótulos de dados como 16 pixels
+                }
+            },
+        };
+
+        var options2 = {
+            series: [108, 118, 325, 359, 401],
+            chart: {
+                width: 380,
+                type: 'pie',
+                foreColor: '#ffffff',
+            },
+            labels: ['1 Estrela', '2 Estrelas', '3 Estrelas', '4 Estrelas', '5 Estrelas'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }],
+            dataLabels: {
+                style: {
+                    fontSize: '16px' // Define o tamanho da fonte dos rótulos de dados como 16 pixels
+                }
+            },
+        };
+
+        var options3 = {
+            series: [89, 201, 298, 420, 523],
+            chart: {
+                width: 380,
+                type: 'pie',
+                foreColor: '#ffffff',
+            },
+            labels: ['1 Estrela', '2 Estrelas', '3 Estrelas', '4 Estrelas', '5 Estrelas'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }],
+            dataLabels: {
+                style: {
+                    fontSize: '16px' // Define o tamanho da fonte dos rótulos de dados como 16 pixels
+                }
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+        var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+
+        chart.render();
+        chart2.render();
+        chart3.render();
+    </script>
+
+</body>
+
+</html>
