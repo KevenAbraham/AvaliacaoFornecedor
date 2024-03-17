@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/usuarios/editar-usuario.css">
+    <link rel="stylesheet" href="/css/usuarios/cadastrar/cadastrar.css">
     <link rel="stylesheet" href="/css/others/sidebar.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -29,14 +29,18 @@
                     <p>Avaliar<span class="menu_vector">►</span></p>
                     <ul class="sub-menu">
                         <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><li>Realizar Avaliação</li></a>
-                        <a href="#"><li>Histórico de Avaliações</li></a>
+                        <a href="/html/avaliar/consulta/consulta_avaliacao.html"><li>Histórico de Avaliações</li></a>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <p><a href="usuarios/lista-usuarios.html">Usuários</a></p>
+                    <p>Usuários<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/usuarios/cadastro/cadastrar.html"><li>Criar Usuário</li></a>
+                        <a href="/html/usuarios/visualizar/lista-usuarios.html"><li>Consultar Usuário</li></a>
+                    </ul>
                 </li>
                 <li class="menu-item">
-                    <p><a href="#">Indicadores</a></p>
+                    <p><a href="/html/indicadores/indicadores.html">Indicadores</a></p>
                 </li>
             </ul>
 
@@ -46,39 +50,25 @@
         </nav>
 
         <section class="container">
-            <h2 class="title">Dados do Fornecedor</h2>
+            <h2 class="title">Cadastrar Usuário</h2>
             <div class="line"></div>
             <div class="box">
-                <div class="left">
-                    <div class="input">
-                        <div class="label">
-                            <label for="">Nome:</label>
-                        </div>
-                        <input type="text" placeholder="Nome do usuário">
+                <div class="input">
+                    <div class="label">
+                        <label for="">Nome:</label>
                     </div>
-                    <div class="input">
-                        <div class="label">
-                            <label for="">E-mail:</label>
-                        </div>
-                        <input type="text" placeholder="fornecedor@gmail.com">
-                    </div>
+                    <input type="text" placeholder="Nome do usuário">
                 </div>
-                <div class="right">
-                    <div class="toggle-wrapper">
-                        <div class="description">
-                            Status:
-                        </div>
-                        <label class="switch">
-                            <input type="checkbox" class="hidden-toggle" />
-                            <div class="slider">
-                                <div class="button"></div>
-                            </div>
-                        </label>
+                <div class="input">
+                    <div class="label">
+                        <label for="">E-mail:</label>
                     </div>
+                    <input type="text" placeholder="fornecedor@gmail.com">
                 </div>
             </div>
+            </div>
             <div class="buttons">
-                <a href="/html/usuarios/lista-usuarios.html"><button><i class="fas fa-save"></i>Salvar</button></a>
+                <a href="/html/usuarios/lista-usuarios.html"><button><i class="fas fa-save"></i>Cadastrar</button></a>
             </div>
         </section>
     </main>

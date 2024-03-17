@@ -1,0 +1,81 @@
+@import url(/css/others/style.css);
+
+main {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    background-color: var(--azulFundoPrincipal);
+}
+
+.title {
+    margin: 120px auto 0 auto;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    width: 90%;
+}
+
+.line {
+    width: 90%;
+    background-color: #fff;
+    height: 2px;
+    margin: auto;
+}
+
+.box {
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin: 50px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.input {
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    align-items: center
+}
+
+.input input {
+    margin: 0 0 0 32px;
+    background-color: transparent;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    height: 40px;
+    font-size: 22px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 158px;
+    height: 60px;
+    background: var(--btnColorMain);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.04);
+    transition: .2s ease;
+}
+
+.buttons button i {
+    margin-right: 10px;
+}

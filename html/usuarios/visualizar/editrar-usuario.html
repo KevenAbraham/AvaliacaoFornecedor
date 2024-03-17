@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/avaliar/consulta/visualizacao_avaliacao.css">
+    <link rel="stylesheet" href="/css/usuarios/visualizar/editar-usuario.css">
     <link rel="stylesheet" href="/css/others/sidebar.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <title>Avaliação de Fornecedor</title>
 </head>
+
 <body>
     <main>
         <nav class="sidebar">
@@ -51,32 +50,44 @@
         </nav>
 
         <section class="container">
-            <h2 class="title">visualização completa da avaliação</h2>
+            <h2 class="title">Dados do Fornecedor</h2>
             <div class="line"></div>
-            
-            <div class="content">
-                <h2 class="avaliacaoNome">Nome:</h2>
-                <div class="nome-data">
-                    <p class="avaliadorNome">Keven Abraham</p>
-                    <p class="data">11/01/2024</p>
+            <div class="box">
+                <div class="left">
+                    <div class="input">
+                        <div class="label">
+                            <label for="">Nome:</label>
+                        </div>
+                        <input type="text" placeholder="Nome do usuário">
+                    </div>
+                    <div class="input">
+                        <div class="label">
+                            <label for="">E-mail:</label>
+                        </div>
+                        <input type="text" placeholder="fornecedor@gmail.com">
+                    </div>
                 </div>
-
-                <h2 class="avaliacaoNota">Avaliação:</h2>
-                <p class="nota"><span><i class="fa-solid fa-star"></i></span>5 Estrelas</p>
-
-                <h2 class="avaliadoEm">Fornecedor avaliado em:</h2>
-                <div class="avaliado">tempo de entrega</div>
-
-                <h2 class="detalhe">Detalhe da avaliação:</h2>
-                <div class="detalheBox">Fornecedor soube respeitar o prazo, atendeu corretamente ao pedido, por isso minha nota é 5.</div>
-
-                <div class="btn">
-                    <a href="historico_avaliacao.html"><button>Voltar</button></a>
+                <div class="right">
+                    <div class="toggle-wrapper">
+                        <div class="description">
+                            Status:
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" class="hidden-toggle" />
+                            <div class="slider">
+                                <div class="button"></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
+            </div>
+            <div class="buttons">
+                <a href="/html/usuarios/lista-usuarios.html"><button><i class="fas fa-save"></i>Salvar</button></a>
             </div>
         </section>
     </main>
 
     <script src="/js/sidebar.js"></script>
 </body>
+
 </html>
