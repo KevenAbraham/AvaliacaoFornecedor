@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indicadores/indicadores.css">
+    <link rel="stylesheet" href="/css/others/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Avaliação de Fornecedor</title>
+</head>
+
+<body>
+    <main>
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="/html/home.html"><img src="/img/websupplyLogo.png" alt="Logo da Websupply"></a>
+            </div>
+            <ul>
+                <li class="menu-item">
+                    <p>Fornecedores<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/fornecedor/cadastro/cadastro1.html"><li>Cadastrar</li></a>
+                        <a href="/html/fornecedor/analisar/lista-fornecedor.html"><li>Analisar</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p>Avaliar<span class="menu_vector">►</span></p>
+                    <ul class="sub-menu">
+                        <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><li>Realizar Avaliação</li></a>
+                        <a href="/html/avaliar/consulta/consulta_avaliacao.html"><li>Histórico de Avaliações</li></a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <p><a href="usuarios/lista-usuarios.html">Usuários</a></p>
+                </li>
+                <li class="menu-item">
+                    <p><a href="/html/indicadores/indicadores.html">Indicadores</a></p>
+                </li>
+            </ul>
+
+            <div class="buttonArea">
+                <a href="/"><button>Finalizar</button></a>
+            </div>
+        </nav>
+
+        <section class="container">
+            <h2 class="title">Indicadores</h2>
+            <div class="line"></div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="entrega">
+                        <h2 class="titleBox">Tempo de Entrega</h2>
+                        <div id="chart"></div>
+                    </div>
+
+                    <div class="servico">
+                        <h2 class="titleBox">Qualidade de Serviço</h2>
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h2 class="titleBox">Qualidade de Produto</h2>
+                    <div id="chart3"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="/html/avaliar/avaliar/avaliar_fornecedor.html"><button><i class="fas fa-star"></i>Avaliar</button></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/apexcharts.js"></script>
+</body>
+
+</html>
